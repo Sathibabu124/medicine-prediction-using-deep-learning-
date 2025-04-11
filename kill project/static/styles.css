@@ -1,0 +1,88 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient Background */
+    color: #333;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+/* Header Styling */
+h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styling */
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    background: #4facfe;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #00f2fe;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+}

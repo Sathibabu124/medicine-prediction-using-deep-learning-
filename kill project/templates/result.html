@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">  <!-- Linking CSS -->
+    <title>Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .result-box { margin: 20px auto; padding: 20px; border: 1px solid #ccc; width: 400px; }
+    </style>
+</head>
+<body>
+    <h2>Prediction Result</h2>
+    <div class="result-box">
+        <p><strong>Predicted Disease:</strong> {{ disease }}</p>
+        <p><strong>Recommended Medicines:</strong> 
+            {% if medicines %}
+                {{ medicines | join(', ') }}
+            {% else %}
+                No specific medicine recommended.
+            {% endif %}
+        </p>
+    </div>
+    <a href="/">Back to Home</a>
+</body>
+</html>
